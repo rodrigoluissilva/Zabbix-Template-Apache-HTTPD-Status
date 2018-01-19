@@ -18,10 +18,10 @@ If you copy the Python to a differente place, you have to change the path inside
 ```sh
 git clone https://github.com/rodrigoluissilva/Zabbix-Template-Apache-HTTPD-Status.git
 cd Zabbix-Template-Apache-HTTPD-Status
-cp ApacheHttpdStatus.py /etc/zabbix
-chmod +x /etc/zabbix/ApacheHttpdStatus.py
-cp userparameter_httpd.conf /etc/zabbix/zabbix_agentd.d
-service zabbix-agent restart
+sudo cp ApacheHttpdStatus.py /etc/zabbix
+sudo chmod +x /etc/zabbix/ApacheHttpdStatus.py
+sudo cp userparameter_httpd.conf /etc/zabbix/zabbix_agentd.d
+sudo service zabbix-agent restart
 ```
 
 ### Apache HTTPD Server
