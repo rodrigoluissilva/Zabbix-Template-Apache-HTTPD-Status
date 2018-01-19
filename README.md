@@ -63,10 +63,10 @@ zabbix_get -s 10.10.10.10 -k "httpd[Uptime, http://localhost:80/server-status]"
 1390
 ```
 
-Sample error message
+Sample error message (`--show-errors`)
 
 ```
-# zabbix_get -s 10.200.200.201 -k "httpd[Uptime, http://localhost:80/server-status]"
+# zabbix_get -s 10.200.200.201 -k "httpd[Uptime, http://localhost:80/server-status]" --show-errors
 ZBX_NOTSUPPORTED
 <urlopen error [Errno 111] Connection refused>
 ```
